@@ -1,5 +1,7 @@
-name: 'Close stale issues and PRs'
-on: push
+name: "Close stale issues and PRs"
+on: 
+  schedule:
+    - cron: "0 0 * * 1-5"
 
 jobs:
   stale:
@@ -10,8 +12,8 @@ jobs:
     steps:
       - uses: gorzelinski/stale@add-reaction-updates
         with:
-          stale-issue-message: 'Message to comment on stale issues. If none provided, will not mark issues stale'
-          stale-pr-message: 'Message to comment on stale PRs. If none provided, will not mark PRs stale'
+          stale-issue-message: "Nobody has updated the issue since the last year. We know it may be valid, so if you're interested in the solution, leave a comment or reaction."
+          stale-pr-message: "Nobody has updated the PR since the last year. We know it may be valid, so if you're interested in the contribution, leave a comment or reaction."
           days-before-stale: 1
           days-before-close: 1
           exempt-issue-labels: support
