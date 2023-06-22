@@ -12,8 +12,8 @@ jobs:
     steps:
       - uses: gorzelinski/stale@add-reaction-updates
         with:
-          stale-issue-message: "Nobody has updated the issue since the last year. We know it may be valid, so if you're interested in the solution, leave a comment or reaction."
-          stale-pr-message: "Nobody has updated the PR since the last year. We know it may be valid, so if you're interested in the contribution, leave a comment or reaction."
+          stale-issue-message: "Nobody has updated the issue since the last year. Now it is marked as stale and will be closed soon. We know it may be valid, so if you're interested in the solution, leave a comment or reaction."
+          stale-pr-message: "Nobody has updated the PR since the last year. Now it is marked as stale and will be closed soon. We know it may be valid, so if you're interested in the contribution, leave a comment or reaction."
           days-before-stale: 1
           days-before-close: 1
           exempt-issue-labels: support
